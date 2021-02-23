@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      .lp-content > p {
+        margin: 16px;
+        font-size: 14px;
+      }
+      iframe {
+        width: 100%;
+        border: none;
+        height: 230px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video"></div>
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/jquery.min.js"></script>
+    <script>
+      window.document.addEventListener('message', function (e) {
+        $('#video').append(e.data);
+      });
+    </script>
+  </body>
+</html>
