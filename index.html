@@ -33,6 +33,10 @@
         $('#video').append(e.data);
       });
       alert('加载成功')
+
+      window.receiveMessage = (message) => {
+        alert(message)
+      }
     </script>
   </body>
 </html>
