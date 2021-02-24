@@ -27,9 +27,10 @@
     <div id="video"></div>
     <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/jquery.min.js"></script>
     <script>
-      window.receiveMessage = (message) => {
-        $('#video').append(message);
-      }
+      window.receiveMessage = message => {
+        // $('#video').append(message);
+        document.getElementById('video').innerHTML(message);
+      };
     </script>
   </body>
 </html>
