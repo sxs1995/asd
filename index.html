@@ -35,8 +35,8 @@
       alert('加载成功')
 
       window.receiveMessage = (message) => {
-        alert(message)
-        $('#video').append(message);
+        alert(message.message)
+        $('#video').append(message.message);
       }
     </script>
   </body>
