@@ -35,9 +35,7 @@
       alert('加载成功')
 
       window.receiveMessage = (message) => {
-        const data = JSON.parse(message);
-        alert(message)
-        $('#video').append(data.message);
+        $('#video').append(message);
       }
     </script>
   </body>
