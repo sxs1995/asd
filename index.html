@@ -27,15 +27,16 @@
     <div id="video"></div>
     <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/jquery.min.js"></script>
     <script>
-      window.document.addEventListener('message', function (e) {
-        alert('success');
-        alert(e.data);
-        $('#video').append(e.data);
-      });
+      // window.document.addEventListener('message', function (e) {
+      //   alert('success');
+      //   alert(e.data);
+      //   $('#video').append(e.data);
+      // });
       alert('加载成功')
 
       window.receiveMessage = (message) => {
         alert(message)
+        $('#video').append(message);
       }
     </script>
   </body>
